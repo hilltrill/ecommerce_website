@@ -113,10 +113,9 @@ span {
 }
 
 .lorem {
-    font-size: 20px;
-    font-weight: 500;
-    width: 800px;
+    font-size: 18px;
     text-align: center;
+    color: #a09e9e;
 }
 
 
