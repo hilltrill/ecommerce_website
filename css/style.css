@@ -12,6 +12,7 @@ body {
     color: #333;
 }
 
+/* Header */
 
 header {
     height: 5rem;
@@ -24,6 +25,8 @@ header {
     /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
     margin-bottom: 70px;
 }
+
+/* nav bar */
 
 .logo {
     font-size: 24px;
@@ -58,13 +61,18 @@ nav ul li a {
 
 nav a:hover{
     color: #fa9d55;
-    /* transition: color ease-in .3s */
+    transition: color ease-in .3s
 }
 
-.Logo {
-    padding: 50;
+.bx-shopping-bag:hover {
     color: #fa9d55;
+    transition: ease-in .3s;
 }
+
+.bx-search:hover {
+    color: #fa9d55;
+    transition: ease-in .3s;
+    }
 
 .login-btn{
     font-size: 12px;
@@ -85,6 +93,11 @@ nav a:hover{
     padding: 8px 28px;
     border: none;
    }
+
+
+ /* main  */
+   
+/* Hero Section */
 
 .hero-section {
     /* height: 100px; */
@@ -116,16 +129,65 @@ span {
     font-size: 18px;
     text-align: center;
     color: #a09e9e;
+    margin-bottom: 20px;
 }
 
 
+.shop-now-btn {
+    font-size: 12px;
+    background: #fa9d55;
+    color: white;
+    border-radius: 6px;
+    padding: 8px 25px;
+    border: none;
+    margin-right: 10px;
+    
+}
+
+.learn-more-btn {
+    font-size: 12px;
+    font-weight: bold; 
+    display: inline;
+    background-color: white;
+    border: 1px solid rgb(193, 187, 187);
+    border-radius: 6px;
+    padding: 8px 28px;
+}
+
+.check-us{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.check-us p {
+    margin: 0;
+    font-size: 12px;
+    color: #a09e9e; 
+    margin-right: 15px;
+    position: relative;
+}
 
 
+.check-us p::after {
+    content: "";
+    display: inline-block;
+    width: 1.2px;
+    height: 26px;
+    background-color: #a09e9e; /* Color of the line */
+    margin-left: 15px; /* Space between text and line */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
-
-
-
-
+.check-us a {
+    font-size: 25px; /* Adjust icon size */
+    color: #a09e9e; 
+    text-decoration: none;
+}
 
 
 
