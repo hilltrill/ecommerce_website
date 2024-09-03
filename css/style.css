@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/cabinet-grotesk');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: #333;
+}
+
+/* Header */
+
+header {
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    margin-bottom: 70px;
+}
+
+/* nav bar */
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fa9d55;
+    margin-left: 15px;
+}
+.auth-buttons{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.auth-buttons div{
+    display: flex;
+    gap: 15px;
+}
+nav  ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li {
+    font-size: 16px;
+    font-weight: 600;
+}   
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav a:hover{
+    color: #fa9d55;
+    transition: color ease-in .3s
+}
+
+.bx-shopping-bag:hover {
+    color: #fa9d55;
+    transition: ease-in .3s;
+}
+
+.bx-search:hover {
+    color: #fa9d55;
+    transition: ease-in .3s;
+    }
+
+.login-btn{
+    font-size: 12px;
+    font-weight: bold;
+    display: inline;
+    background-color: white;
+    border: 1px solid rgb(193, 187, 187);
+    border-radius: 6px;
+    padding: 8px 25px;
+
+}
+.signup-btn{
+    font-size: 12px;
+    display: inline;
+    background: #fa9d55;
+    color: white;
+    border-radius: 6px;
+    padding: 8px 28px;
+    border: none;
+   }
+
+
+ /* main  */
+   
+/* Hero Section */
+
+.hero-section {
+    /* height: 100px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.elite-coders-button {
+    background-color: white;
+    border-radius: 15px;
+    padding: 8px 12px;
+    border: 1px solid rgb(193, 187, 187);
+    margin-bottom: 20px;
+}
+
+.re-invent {
+    font-weight: 400;
+    font-size: 50px;
+    font-family: 'Cabinet Grotesk', sans-serif;
+}
+
+span {
+    color: #fa9d55;
+}
+
+.lorem {
+    font-size: 18px;
+    text-align: center;
+    color: #a09e9e;
+    margin-bottom: 20px;
+}
+
+
+.shop-now-btn {
+    font-size: 12px;
+    background: #fa9d55;
+    color: white;
+    border-radius: 6px;
+    padding: 8px 25px;
+    border: none;
+    margin-right: 10px;
+    
+}
+
+.learn-more-btn {
+    font-size: 12px;
+    font-weight: bold; 
+    display: inline;
+    background-color: white;
+    border: 1px solid rgb(193, 187, 187);
+    border-radius: 6px;
+    padding: 8px 28px;
+}
+
+.check-us{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.check-us p {
+    margin: 0;
+    font-size: 12px;
+    color: #a09e9e; 
+    margin-right: 15px;
+    position: relative;
+}
+
+
+.check-us p::after {
+    content: "";
+    display: inline-block;
+    width: 1.2px;
+    height: 26px;
+    background-color: #a09e9e; /* Color of the line */
+    margin-left: 15px; /* Space between text and line */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.check-us a {
+    font-size: 25px; /* Adjust icon size */
+    color: #a09e9e; 
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+   /* Responsive Design - Media Queries */
+   /* Small devices (phones, 600px and below) */
+   @media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    .auth-buttons {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .auth-buttons .login-btn, 
+    .auth-buttons .signup-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+        flex-direction: column;
+    }
+   }
+
+
