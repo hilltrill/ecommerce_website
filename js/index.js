@@ -1,14 +1,27 @@
-document.addEventListener("DOMContentLoaded", function () {
-    // Handle the Login button click
-    const loginButton = document.querySelector(".login-btn");
-    loginButton.addEventListener("click", function (){
-        console.log("Login button clicked");
-    });
+// Select the buttons
+const loginButton = document.querySelector(".login-btn");
+const signupButton = document.querySelector(".signup-btn");
+const shopNowButton = document.querySelector(".shop-now-btn");
+const learnMoreButton = document.querySelector(".learn-more-btn");
 
-    // Handle the Sign up button click
-    const signupButton = document.querySelector(".signup-btn");
-    signupButton.addEventListener("click", function(){
-        console.log("Sign up button clicked");
-        
-    });
+// Login Button EventListener
+loginButton.addEventListener("click", function (){
+    window.location.href = "login.html";
 });
+
+// Event listener for the Sign Up button
+signupButton.addEventListener("click", function(){
+    window.location.href = "signup.html";   
+});
+
+// Event listener for Shop Now button
+
+shopNowButton.addEventListener("click", function() {
+    window.location.href = "shopnow.html";
+}); 
+
+// Event listener for Learn More button
+
+learnMoreButton.addEventListener("click", function() {
+    window.location.href = "learnmore.html";
+}); 
